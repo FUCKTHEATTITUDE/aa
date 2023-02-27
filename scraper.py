@@ -77,7 +77,7 @@ if not c.is_user_authorized():
         print(f'{error}{lg} Run {w}manager.py{lg} to filter them{rs}')
         sys.exit()
 group = c.get_entity(group_name)
-target_grp = "t.me/" + group_name
+target_grp = "https://t.me/" + group_name
 
 choice = int(input(f"\n{lg}How would you like to obtain the users?\n\n{r}[{cy}0{r}]{lg} All users\n{r}[{cy}1{r}]{lg} Active Users(online today and yesterday)\n{r}[{cy}2{r}]{lg} Users active in the last week\n{r}[{cy}3{r}]{lg} Users active in the last month\n{r}[{cy}4{r}]{lg} Non-active users(not active in the last month) \n\nYour choice: "))
 members = []
